@@ -52,21 +52,33 @@ console.log("------------------------------------------");
 
 const deliveryAreaZipCodes = [85205, 85204, 85203, 85213, 85206]
 
-const canWeDeliver = (zipCode) => {
+/*const canWeDeliver = (zipCode) => {
     for(i = deliveryAreaZipCodes[0]; i < deliveryAreaZipCodes.length; i++)
     {
         if(zipCode === i){
-            return console.log("You're in our deliveruy zone!");
+            return console.log("You're in our delivery zone!");
         }else{
             return console.log("Sorry, we can't deliver to that address."); 
         }
     } 
 
 }
+*/
 
-canWeDeliver(179273);
+
+for(i = deliveryAreaZipCodes[0]; i < deliveryAreaZipCodes.length; i++)
+    {
+        if(zipCode === i){
+            return console.log("You're in our delivery zone!");
+        }else{
+            return console.log("Sorry, we can't deliver to that address."); 
+        }
+    } 
+
+//canWeDeliver(179273);
 console.log("------------------------------------------");
-canWeDeliver(deliveryAreaZipCodes[0]);
+//canWeDeliver(deliveryAreaZipCodes[0]);
+
 
 //console.log(deliveryAreaZipCodes[1]);
 
